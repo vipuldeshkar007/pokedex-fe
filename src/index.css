@@ -83,6 +83,7 @@ code {
   border-radius: 1.875rem; 
   background-image: linear-gradient(to bottom, #4b6d73, #9655cf);
   animation: gradient 4s infinite alternate linear;
+  border: 5px solid white;
 
   .result-box {
     width: 10rem;
@@ -117,6 +118,7 @@ code {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s;
+  border: 5px solid white;
 }
 
 .btn:hover {
