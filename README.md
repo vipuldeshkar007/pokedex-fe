@@ -1,3 +1,4 @@
+
 # Pokedex Frontend Application
 
 This is a React application that allows users to search for Pokémon using the [PokeAPI](https://pokeapi.co). 
@@ -34,4 +35,3 @@ npm start
 ```bash
 npm test
 ```
-
