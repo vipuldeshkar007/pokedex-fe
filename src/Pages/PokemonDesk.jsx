@@ -4,7 +4,6 @@ import PokemonCard from '../Components/PokemonComponent';
 import PokedexLogo from "../assets/Pokedex_logo.png";
 
 function PokemonDesk() {
- // Display individual Pokémon details
 
     const [pokemonData, setPokemonData] = useState(null);
 
