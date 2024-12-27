@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import pokemonSearchSvg from "../assets/pokemon-search.svg";
 import { toast } from "react-toastify";
-import { getPokemonList } from "../service/service.js"
+import { getPokemon } from "../service/service.js"
 
 const Search = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -15,7 +15,7 @@ const Search = ({ onSearch }) => {
 
     const toastId = toast.loading("Loading Pokemon...");
     try {
-      const response  = await getPokemonList(searchQuery);
+      const response  = await getPokemon(searchQuery);
       toast.update(toastId, {
         render: `Pokémon found for name: ${searchQuery}!`,
         type: "success",

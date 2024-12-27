@@ -1,9 +1,9 @@
 import axiosIns from "../lib/axios";
 
-export const getPokemonList = async (searchParam) => {
+export const getPokemon = async (searchParam) => {
   const response = await axiosIns({
     method: "GET",
-    url: `getPokemonList/${searchParam}`,
+    url: `pokemon/${searchParam}`,
   })
   return response.data;
 }
